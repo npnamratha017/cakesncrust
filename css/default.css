@@ -1,0 +1,261 @@
+﻿
+ .cake-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .cake-card {
+    /*padding: 25px;*/
+    border-radius: 15px;
+    /*color: #fff;*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .cake-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+/*  .cake-card h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }*/
+
+/*  .cake-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }*/
+
+  /* Individual background colors */
+  .bday { background-color: #fffc93; }         /* Soft pink-red */
+  .anniversary { background-color: #f7d9de; }  /* Romantic blush */
+  .brownies { background-color: #fff4de; }     /* Chocolate brown */
+  .cupcakes { background-color: #ffeec3; }     /* Sweet yellow */
+  .wedding { background-color: #f4fae1; }      /* Soft lavender */
+  .allcakes { background-color: #cfe8fc; }   
+
+   .navbar {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+.container {
+  /*background-color: #ffc39f;*/
+}
+  /* Stylish bakery title */
+  .bakery-title {
+    font-family: "Sofia", sans-serif;
+    font-size: 2.2rem;
+    /*color: #d63384;*/
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+
+  .bakery-title:hover {
+    /*color: #ff80b3;*/
+    text-decoration: none;
+  }
+  .carousel-item img {
+      border-radius: 10px;
+      object-fit: contain;
+      height:700px;
+    }
+
+    .about-section {
+      padding: 60px 0;
+    }
+
+    .about-text {
+    text-align: center;
+    height: -webkit-fill-available;
+    background-repeat: round;
+          padding: 35px;
+      border-radius: 10px;
+    }
+
+
+  /* Navigation links styling */
+  .navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    /*color: #333;*/
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #d63384;
+  }
+    nav.navbar {
+      background-color: #ffc39f;
+    }
+  .bodybg {
+  background-size: cover !important;
+  background-position: center;
+  background: fixed;
+  }
+  .bodybgh{
+     background-size: cover !important;
+  background-position: center;
+  background: fixed;
+  }
+  @media (max-width: 600px) {
+    .bodybgh {
+    background: none !important;
+  }
+}
+.bg-home {
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .bg-hero:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6); }
+  .bg-home .container {
+    z-index: 2;
+    position: relative; }
+
+      .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  .fade-out {
+    animation: fadeOut 0.4s ease forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(20px); }
+  }
+/* dot circles */
+.dot-circle:hover:before {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  transition: all .25s ease-out; }
+
+.dot-circle:before {
+  background: rgba(0, 230, 118, 0.1);
+  transition: all .25s ease-out;
+  border-radius: 0px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: "";
+  height: 100px;
+  left: -25px;
+  position: absolute;
+  top: -30px;
+  width: 100px; }
+
+.dot-circle.dot-sm:before {
+  height: 70px;
+  left: -15px;
+  top: -15px;
+  width: 70px; }
+
+.dot-circle.dot-lg:before {
+  height: 200px;
+  left: -50px;
+  top: -60px;
+  width: 200px; }
+
+/*service cards */
+/*.card-services .card {
+  transition: all .25s ease-out; }
+  .card-services .card:hover {
+    transition: all .25s ease-out; }*/
+
+/*reviews*/
+.review .quote {
+  font-size: 1.35rem;
+  font-style: italic; }
+
+/*footer*/
+footer ul > li {
+  padding: 0.5rem; }
+
+ footer {
+      background: #f7d7c4;
+      padding: 20px;
+      text-align: center;
+      color: #5a2d1b;
+      margin-top: 40px;
+    }
+
+/*social icons*/
+.social a {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.2);
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 45px; }
+  .social a:hover {
+    background: #00e676;
+    transition: all .4s ease-in-out; }
+
+.social.social-dark a {
+  background: rgba(0, 0, 0, 0.6); }
+  .social.social-dark a:hover {
+    background: #00e676; }
+
+.social.social-sm a {
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  line-height: 35px; }
+
+.social.social-rounded a {
+  border-radius: 50%; }
+
+.social.social-white a {
+  background: #ffffff;
+  color: rgba(52, 58, 64, 0.7); }
+  .social.social-white a:hover {
+    color: #00e676; }
+
+.social.social-white-alt a {
+  background: #ffffff;
+  color: rgba(52, 58, 64, 0.7); }
+  .social.social-white-alt a:hover {
+    background: #00e676;
+    color: #ffffff; }
+
+/*scroll to top */
+.scroll-top {
+  bottom: 20px;
+  font-size: 20px;
+  height: 40px;
+  position: fixed;
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 50%;
+  line-height: 40px;
+  right: -100px;
+  color: #ffffff;
+  background-color: rgba(0, 230, 118, 0.5); }
+  .scroll-top:hover {
+    background-color: #00e676;
+    transition: all .4s ease-in-out; }
+  .scroll-top.active {
+    right: 20px; }
+
+
